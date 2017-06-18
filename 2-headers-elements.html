@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Butlins</title>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!--[if !mso]><!-- -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+
+<!--outlook DPI fix-->
+
+<!--[if gte mso 9]><xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+<!--outlook DPI fix ends-->
+
+<style type="text/css">
+
+img {
+/* Allow smoother rendering of resized image in Internet Explorer */
+-ms-interpolation-mode: bicubic;
+}
+
+/* styles for mobile view */
+@media all and ( max-width: 600px )
+{
+	
+/* reset styles*/
+
+*[id]#wrapper + table,
+*[class].container,
+*[class].nav {
+min-width: 0 !important;
+-moz-text-size-adjust: none;
+-ms-text-size-adjust: none;
+-webkit-text-size-adjust: none;
+width: 100% !important;
+}
+
+/* nav styles*/
+
+*[id]#mobile-label {
+background-color:;
+cursor: pointer;
+display:block !important;
+float: right;
+padding: 22px 18px;
+-webkit-tap-highlight-color: transparent;
+width: 25px;
+}
+
+*[id]#mobile-label > b {
+background-color: #414042;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+display:block;
+height: 3px;
+}
+
+*[id]#mobile-label > b + b {
+margin-top: 4px;
+}
+
+*[class].nav td {
+padding: 0 !important;
+}
+
+*[id]#nav-wrapper {
+background-color: #ffffff;
+max-height: 0;
+overflow: hidden;
+-moz-transition: max-height .25s linear;
+-ms-transition: max-height .25s linear;
+-o-transition: max-height .25s linear;
+-webkit-transition: max-height .25s linear;
+transition: max-height .25s linear;
+}
+
+*[id]#mobile-checkbox:checked + table #nav-wrapper {
+max-height: 200px;
+}
+
+*[class].nav + .nav {
+border-top: 1px solid #eeeae0;
+}
+
+*[class].nav-item {
+color: #414042 !important;
+display:block;
+font-size:14px;
+font-weight:600;
+padding: 12px;
+text-align: center;
+}
+
+td[class].resize-nav-full {
+width: 100%!important; 
+height:auto!important; 
+background-color: 
+#ffffff!important;
+}
+
+td[class].nav-float {
+float:left!important; 
+width:100%!important; 
+border-top: 1px solid #c0c1c2;
+}
+
+/* t&cs drop down styles*/
+
+*[id]#mobile-label2 {
+background-color:;
+color:#333333;
+cursor: pointer;
+display:block !important;
+-webkit-tap-highlight-color: transparent;
+padding:10px 0px 0px 0px;
+width: 100%;
+}
+
+*[id]#tcs-wrapper {
+background-color:;
+max-height: 0;
+overflow: hidden;
+-moz-transition: max-height 1s linear;
+-ms-transition: max-height 1s linear;
+-o-transition: max-height 1s linear;
+-webkit-transition: max-height 1s linear;
+transition: max-height 1s linear;
+}
+
+*[id]#mobile-checkbox2:checked + table #tcs-wrapper {
+max-height: 1000px;
+}
+
+span[class].mobile-tcs-color {color:#333333;}
+
+/* general styles*/
+				
+[class].no-mobile {display:none!important;}
+
+[class].no-advanced {display:none !important;}
+				
+[class].mobile-show {display: block !important;}
+
+[class].advanced-show {display:block !important;}
+				
+[class].re-align-left {text-align:left!important;}
+
+[class].mobile-spacer {background-color:#8d8c8e!important;}
+
+/* resize float styles*/
+
+td[class=float] {float:left!important;}
+
+td[class=resize-100-float] {width:100%!important; float:left!important;}
+
+/* resize styles*/
+
+table[class=height-auto], td[class=height-auto] {height:10px!important; padding:0px 0px 10px 0px!important;}
+
+table[class=resize-100px], td[class=resize-100px] {width:100px!important; height:auto!important;}
+	
+table[class=resize-100], td[class=resize-100], img[class=resize-100] {width:100%!important; height:auto!important;}
+
+table[class=resize-95], td[class=resize-95], img[class=resize-95] {width:95%!important; height:auto!important;}
+
+table[class=resize-90], td[class=resize-90], img[class=resize-90] {width:90%!important; height:auto!important;}
+
+table[class=resize-85], td[class=resize-85], img[class=resize-85] {width:85%!important; height:auto!important;}
+	
+table[class=resize-80], td[class=resize-80], img[class=resize-80] {width:80%!important; height:auto!important;}
+
+table[class=resize-70], td[class=resize-70], img[class=resize-70] {width:70%!important; height:auto!important;}
+
+table[class=resize-60], td[class=resize-60], img[class=resize-60] {width:60%!important; height:auto!important;}
+
+table[class=resize-50], td[class=resize-50], img[class=resize-50] {width:50%!important; height:auto!important;}
+
+table[class=resize-40], td[class=resize-40], img[class=resize-40] {width:40%!important; height:auto!important;}
+
+table[class=resize-30], td[class=resize-30], img[class=resize-30] {width:30%!important; height:auto!important;}
+
+table[class=resize-20], td[class=resize-20], img[class=resize-20] {width:20%!important; height:auto!important;}
+
+table[class=resize-10], td[class=resize-10], img[class=resize-10] {width:10%!important; height:auto!important;}
+
+table[class=resize-btn], td[class=resize-btn] {width:100%!important; height:auto!important; padding:6px 0px!important;}
+
+img[class=resize-arw-banner] {width:9px!important; height:auto!important;}
+
+img[class=resize-arw] {width:7px!important; height:auto!important;}
+
+/*mobile font styles*/
+
+span[class=mobile-font-18] {font-size:18px!important; line-height:23px!important;}
+
+span[class=mobile-font-17] {font-size:17px!important; line-height:22px!important;}
+
+span[class=mobile-font-16] {font-size:16px!important; line-height:21px!important;}
+
+span[class=mobile-font-15] {font-size:15px!important; line-height:20px!important;}
+
+span[class=mobile-font-14] {font-size:14px!important; line-height:19px!important;}
+
+span[class=mobile-font-13] {font-size:13px!important; line-height:18px!important;}
+
+span[class=mobile-font-12] {font-size:12px!important; line-height:17px!important;}
+
+/*social icon styles*/
+
+table[class=resize-280], td[class=resize-280] {width:280px!important; height:auto!important;}
+
+img[class=resize-social] {width:40px!important; height:40px!important;}
+
+td[class=resize-social-space] {width:8px!important;}
+
+}
+
+/* styles for webkit enabled browsers */
+@media only screen and (-webkit-min-device-pixel-ratio: 1){ 
+
+/* t&cs drop down styles*/
+
+*[id]#mobile-label2 {
+background-color:;
+color:#333333;
+cursor: pointer;
+display:block !important;
+-webkit-tap-highlight-color: transparent;
+padding:10px 0px 0px 0px;
+width: 100%;
+}
+
+*[id]#tcs-wrapper {
+background-color:;
+max-height: 0;
+overflow: hidden;
+-moz-transition: max-height 1s linear;
+-ms-transition: max-height 1s linear;
+-o-transition: max-height 1s linear;
+-webkit-transition: max-height 1s linear;
+transition: max-height 1s linear;
+}
+
+*[id]#mobile-checkbox2:checked + table #tcs-wrapper {
+max-height: 1000px;
+}
+
+span[class].mobile-tcs-color {color:#333333;}
+
+td[class].advanced-show {display:block !important;}
+
+td[class].no-advanced {display:none !important;}
+
+}
+</style>
+
+</head>
+<body style="padding:0; margin:0; -webkit-font-smoothing: antialiased; width:100% !important; background:#eeeae0; -webkit-text-size-adjust:none;">
+	<table id="wrapper" bgcolor="#eeeae0" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; table-layout: fixed;" width="100%">
+		<tr>
+			<td align="center"><table width="600" border="0" cellpadding="0" cellspacing="0" summary=" " class="resize-100">
+            
+            	<!--spacer line-->
+                <tr>
+                	<td align="center" style="padding:20px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="resize-90">
+						<tr>
+                     		<td height="1" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" bgcolor="#8d8c8e">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--spacer line ends-->
+            
+            	<!--main banner-->
+                <tr>
+					<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+                        	<td valign="top" class="no-mobile"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img src="images/temp_01.jpg" alt="" width="30" height="300" style="display:block; border:0;"></a></td>
+                          	<td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" src="images/temp_02.jpg" style="display:block; border:0;" width="246" height="253" class="resize-100"></a></td>
+                                </tr>
+                                <tr>
+                               	  	<td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+											<td class="no-mobile"><img alt="" src="images/temp_03.jpg" style="display:block; border:0;" width="30" height="29" class="resize-100"></td>
+                                            <td bgcolor="#d92a28" align="center" valign="middle" width="186" height="27" class="resize-btn"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name" style="color:#ffffff; text-decoration:none;"><font face="Arial, Helvetica, sans-serif" style="font-size:10px; display:inline-block; border:0; line-height:normal; color:#ffffff;letter-spacing:1px;"><strong><span class="mobile-font-13">VIEW DATES AND PRICES</span></strong>&nbsp;&nbsp;<img alt="" src="images/arrow_white.png" style="display:inline-block; border:0;" width="6" height="9" class="resize-arw"></font></a></td>
+                                    		<td class="no-mobile"><img alt="" src="images/temp_04.jpg" style="display:block; border:0;" width="30" height="29" class="resize-100"></td>
+                                    	</tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+									<td><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" src="images/temp_05.jpg" style="display:block; border:0;" width="246" height="18" class="resize-100"></a></td>
+                                </tr>
+                          	</table></td>    
+                          	<td valign="top" class="no-mobile"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" width="324" height="300" src="images/temp_06.jpg" style="display:block; border:0;"></a></td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--main banner ends-->
+                
+                <!--spacer line-->
+                <tr>
+                	<td align="center" style="padding:20px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="resize-90">
+						<tr>
+                     		<td height="1" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" bgcolor="#8d8c8e">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--spacer line ends-->
+
+                <!--main banner-->
+                <tr>
+					<td style="padding:5px 0px 0px 0px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+                        	<td valign="top" class="no-mobile"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img src="images/temp_07.jpg" alt="" width="30" height="282" style="display:block; border:0;"></a></td>
+                          	<td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" src="images/temp_08.jpg" style="display:block; border:0;" width="250" height="239" class="resize-100"></a></td>
+                                </tr>
+                                <tr>
+                               	  	<td valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    	<tr>
+											<td><img alt="" src="images/temp_09.jpg" style="display:block; border:0;" width="73" height="43" class="resize-100"></td>
+                                    		<td valign="top"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="Facebook" src="images/temp_10.jpg" style="display:block; border:0;" width="35" height="43" class="resize-100"></a></td>
+                                    		<td valign="top"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="Twitter" src="images/temp_11.jpg" style="display:block; border:0;" width="34" height="43" class="resize-100"></a></td>
+                                    		<td valign="top"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="Instagram" src="images/temp_12.jpg" style="display:block; border:0;" width="35" height="43" class="resize-100"></a></td>
+                                    		<td valign="top"><img alt="" src="images/temp_13.jpg" style="display:block; border:0;" width="73" height="43" class="resize-100"></td>
+                                    	</tr>
+                                    </table></td>
+                                </tr>
+                          	</table></td>    
+                          	<td valign="top" class="no-mobile"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" width="320" height="282" src="images/temp_14.jpg" style="display:block; border:0;"></a></td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--main banner ends-->
+                
+                <!--spacer line-->
+                <tr>
+                	<td align="center" style="padding:20px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="resize-90">
+						<tr>
+                     		<td height="1" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" bgcolor="#8d8c8e">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--spacer line ends-->
+                
+                <!--main banner-->
+				<tr>
+					<td><table bgcolor="#69c7c6" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" summary=" ">
+						<tr>
+                        	<td style="padding:20px 0px;" class="resize-100-float"><table border="0" cellpadding="0" cellspacing="0" width="100%" summary=" ">
+								<tr>
+                					<td align="center"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" height="207" src="images/temp_15.jpg" style="display:block; border:0;" width="290" class="resize-80"></a></td>
+								</tr>
+								<tr>
+									<td align="center" valign="middle" style="padding:20px 0px 0px 0px"><table border="0" cellpadding="0" cellspacing="0" class="resize-100">
+                                		<tr>
+											<td bgcolor="#d92a28" align="center" valign="middle" height="30" style="padding:0px 10px;" class="resize-btn"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name" style="color:#ffffff; text-decoration:none;"><font face="Arial, Helvetica, sans-serif" style="font-size:10px; display:inline-block; border:0; line-height:normal; color:#ffffff;letter-spacing:1px;"><strong><span class="mobile-font-13">VIEW DATES AND PRICES</span></strong>&nbsp;&nbsp;<img alt="" src="images/arrow_white.png" style="display:inline-block; border:0;" width="6" height="9" class="resize-arw"></font></a></td>
+										</tr>
+                            		</table></td>
+								</tr>
+							</table></td>
+                            <td align="center" valign="top" width="150" class="resize-100-float"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" summary=" ">
+                            	<tr>
+                        			<td align="center" bgcolor="#ffffff" style="padding:10px 0px 0px 0px;" class="no-mobile"><a href="?utm_source=B3656FlashSale_RedEye&utm_medium=Email&utm_campaign=20150629_B3656FlashSale_family_existing&ito=RES_B3656FlashSale_family_existing&itv=[[email]]&itc=exis"><img alt="" height="47" src="images/temp_16.jpg" style="display:block; border:0;" width="25"></a></td>
+								</tr>
+								<tr>   
+									<td class="resize-100-float" align="center" bgcolor="#ffffff" style="padding:15px 0px;"><a href="?utm_source=B3656FlashSale_RedEye&utm_medium=Email&utm_campaign=20150629_B3656FlashSale_family_existing&ito=RES_B3656FlashSale_family_existing&itv=[[email]]&itc=exis"><img alt="" height="169" src="images/temp_17.jpg" style="display:block; border:0;" width="120"></a></td>
+								</tr>
+								<tr>
+                            		<td class="no-mobile"><a href="?utm_source=B3656FlashSale_RedEye&utm_medium=Email&utm_campaign=20150629_B3656FlashSale_family_existing&ito=RES_B3656FlashSale_family_existing&itv=[[email]]&itc=exis"><img alt="" width="150" height="41" src="images/temp_18.jpg" style="display:block; border:0;"></a></td>
+								</tr>
+							</table></td>
+							<td width="40" height="330" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" class="no-mobile">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--main banner ends-->
+                
+                <!--spacer line-->
+                <tr>
+                	<td align="center" style="padding:20px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="resize-90">
+						<tr>
+                     		<td height="1" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" bgcolor="#8d8c8e">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--spacer line ends-->
+                
+                <!--main banner-->
+                <tr>
+					<td style="padding:5px 0px 0px 0px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                		<tr>
+                			<td align="center"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name"><img alt="" height="163" src="images/temp_19.jpg" style="display:block; border:0;" width="400" class="resize-80"></a></td>
+						</tr>
+                        <tr>
+							<td align="center" valign="middle" style="padding:20px 0px 0px 0px"><table border="0" cellpadding="0" cellspacing="0" class="resize-100">
+                                		<tr>
+											<td bgcolor="#d92a28" align="center" valign="middle" height="30" style="padding:0px 10px;" class="resize-btn"><a href="?utm_source=FAMemail&utm_medium=Tactical&utm_campaign=Unique_campaign_name" style="color:#ffffff; text-decoration:none;"><font face="Arial, Helvetica, sans-serif" style="font-size:10px; display:inline-block; border:0; line-height:normal; color:#ffffff;letter-spacing:1px;"><strong><span class="mobile-font-13">VIEW DATES AND PRICES</span></strong>&nbsp;&nbsp;&nbsp;<img alt="" src="images/arrow_white.png" style="display:inline-block; border:0;" width="6" height="9" class="resize-arw"></font></a></td>
+										</tr>
+                            		</table></td>
+						</tr>
+					</table></td>
+                </tr>
+                <!--main banner ends-->
+                
+                <!--spacer line-->
+                <tr>
+                	<td align="center" style="padding:20px 0px;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="resize-90">
+						<tr>
+                     		<td height="1" style="font-size:1px; line-height:0; mso-margin-top-alt:1px;" bgcolor="#8d8c8e">&nbsp;</td>
+						</tr>
+					</table></td>
+				</tr>
+                <!--spacer line ends-->
+                
+                <!--gmail app fix-->
+				<tr>
+                    <td><table height="1" width="600" border="0" cellpadding="0" cellspacing="0" summary=" " class="resize-100">
+                        <tr>
+							<td height="1" class="float"><img src="images/spacer.gif" alt="" width="300" height="1" border="0" style="display:block" class="resize-100"></td>
+							<td height="1" class="float"><img src="images/spacer.gif" alt="" width="300" height="1" border="0" style="display:block" class="resize-100"></td>
+                        </tr>
+                    </table></td>
+                </tr>
+            	<!--gmail app fix ends-->
+                
+			</table></td>
+		</tr>
+	</table>
+</body>
+</html>
